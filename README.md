@@ -26,86 +26,55 @@
 
 3.	Создание файла docker-compose.yml.
 
-docker-compose.yml, предназначен для развертывания Prometheus и	Grafana 
+docker-compose.yml, предназначен для развертывания БД Postgres 
 
-<img width="562" height="458" alt="5" src="https://github.com/user-attachments/assets/5a4b0e07-5b57-4128-ab08-6388f9fa3e9f" />
+<img width="513" height="352" alt="2" src="https://github.com/user-attachments/assets/cc2d8bc7-af61-40db-a5e0-0fbda9c7f772" />
 
 Развертывание сервисов
 
-<img width="716" height="326" alt="6" src="https://github.com/user-attachments/assets/c935e97a-fa93-41c1-ba51-d77ea16e77fd" />
+<img width="867" height="161" alt="3" src="https://github.com/user-attachments/assets/fb261420-3faa-4514-938b-12f31d0c0d0d" />
 
 Рабочие контейнеры в Docker
 
-<img width="1542" height="383" alt="7" src="https://github.com/user-attachments/assets/0c85b657-865c-4d91-b2a9-b56fc19971a2" />
+<img width="1567" height="296" alt="4" src="https://github.com/user-attachments/assets/f93cb82a-a6f6-4c48-b9ee-4b6ff191a7be" />
 
-Открытые сервиси
+Создание и заполнение БД
 
-<img width="1918" height="973" alt="14" src="https://github.com/user-attachments/assets/d031ffa8-a972-4745-b464-e7e68ce7f5b6" />
+<img width="887" height="293" alt="5" src="https://github.com/user-attachments/assets/2f9454ed-bc20-4a32-9ee8-49e84daf3b87" />
 
-4. Тестирование
+4. Создание SSH ключа
+
+<img width="1462" height="451" alt="6" src="https://github.com/user-attachments/assets/503929da-9919-43a1-98ae-a35445634884" />
+
+Созданные ключи
+
+![Uploading 7.png…]()
+
+5. Тестирование
 
 Запуск сервера
 
-<img width="502" height="52" alt="8" src="https://github.com/user-attachments/assets/f1037f6d-41af-42c6-a4d6-7acd9f424b57" />
+<img width="723" height="93" alt="9" src="https://github.com/user-attachments/assets/c3f8dbf0-d5bd-48bb-b93f-7b8cc9b3f675" />
 
 Выполнение тестов
 
 1. Вывод первого студенты
 
-<img width="957" height="682" alt="10" src="https://github.com/user-attachments/assets/2ecd5be5-fc1d-4033-b03e-c14972d88de1" />
+<img width="957" height="552" alt="11" src="https://github.com/user-attachments/assets/9bb4b668-d790-4923-b83d-993f502b488c" />
 
-2. Вывод второго студенты
+2. Ошибка несуществующий студент
 
-<img width="956" height="667" alt="11" src="https://github.com/user-attachments/assets/5bb9035b-cd8b-4b4e-95ae-afe2062eabd0" />
+<img width="953" height="607" alt="12" src="https://github.com/user-attachments/assets/275ee7e6-1231-421f-9173-eec27f4c3284" />
 
-3. Ошибка несуществующий студент
+3. Попытка иньекции
 
-<img width="955" height="597" alt="12" src="https://github.com/user-attachments/assets/39510ad3-e184-48cf-aa6f-7df739ce6cf0" />
+<img width="952" height="592" alt="13" src="https://github.com/user-attachments/assets/67e3fa63-ef11-4353-a5d8-befa02a219a3" />
 
-4. Сборка метрик
+4. Поиск по почте студента
 
-<img width="951" height="837" alt="13" src="https://github.com/user-attachments/assets/ad59e4e4-a21c-42b1-9739-54c06c557e20" />
+<img width="952" height="687" alt="14" src="https://github.com/user-attachments/assets/00706056-5af1-48cb-abaa-5326df8dd2b5" />
 
-Собранные метрики в Prometheus
+5. Переадресация
 
-<img width="947" height="767" alt="15" src="https://github.com/user-attachments/assets/53c71bb7-1f55-4693-b020-c733af10bd7a" />
-
-5. Вывод граффиков метрик
-
-А)Активные запросы
-
-<img width="931" height="846" alt="Активные запросы" src="https://github.com/user-attachments/assets/934b0faf-e6df-4849-81ba-bb6c73affd47" />
-
-Б)Запросы по студентам
-
-<img width="932" height="851" alt="Запросы по студентам" src="https://github.com/user-attachments/assets/2d1206fd-6ea5-4449-a586-00b75f9b8168" />
-
-В)Кол-во ошибок
-
-<img width="923" height="847" alt="кол-во ошибок" src="https://github.com/user-attachments/assets/2ea92655-48e5-4cea-9a0e-30df11649a56" />
-
-Г)Количество запросов по маршрутам
-
-<img width="931" height="861" alt="Количество запросов по маршрутам" src="https://github.com/user-attachments/assets/7c1b4772-f890-41e9-a21a-9ff4bed6891b" />
-
-
-Д)Ошибки по маршрутам
-
-<img width="927" height="842" alt="Ошибки по маршрутам" src="https://github.com/user-attachments/assets/cb65c9d7-5046-4030-bd2b-47c631eb9f48" />
-
-
-Е)Ошибки по статусам
-
-<img width="927" height="852" alt="Ошибки по статусам" src="https://github.com/user-attachments/assets/a8b498d8-fe00-4681-bb2f-ac8274b35627" />
-
-
-Ж)Среднее время обработки HTTP-запросов
-
-<img width="932" height="877" alt="Среднее время обработки HTTP-запросов" src="https://github.com/user-attachments/assets/74bc72dc-c113-445e-9f7a-3d33c5fff778" />
-
-
-З)Среднее время обработки маршрута студентов
-
-<img width="925" height="856" alt="Среднее время обработки маршрута студентов" src="https://github.com/user-attachments/assets/dc7e04a0-d87c-4987-b0bd-3298b2dd640e" />
-
+<img width="961" height="650" alt="15" src="https://github.com/user-attachments/assets/d5274f94-6201-47d3-91ee-75a97af21dab" />
 
